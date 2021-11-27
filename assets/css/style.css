@@ -1,1 +1,69 @@
+:root{
 
+}
+
+body{
+    background-color: aliceblue;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+
+header{
+    background-color: green;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+
+header h1{
+    padding: 20px 0px;
+    
+}
+
+nav{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+        
+}
+
+nav ul{
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex
+   
+}
+
+nav li{
+    display: inline-block;
+}
+
+aside{
+    width: 20%;
+    height: auto;
+    border: 10px solid black;
+}
+
+main{
+    border: 2px solid blue;
+    position: relative;
+    width: 80%;
+    height: auto
+    margin-top: 5px;
+    
+
+}
