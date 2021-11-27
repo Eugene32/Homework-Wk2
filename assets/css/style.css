@@ -23,8 +23,8 @@ header{
     z-index: 1;
     display: block;
     text-align: center;
-    overflow: hidden;
-    opacity: 50%;
+    overflow: auto;
+    
 }
 
 header h1{
@@ -67,6 +67,9 @@ nav li{
     opacity: 50%;
 }
 
+nav li:hover{
+    opacity: 100%;
+}
 
 
 
@@ -92,7 +95,8 @@ main{
 section{
     width: 100%;
     height: auto;
-    margin: 5px;
+    margin: 20px 5px;
+   
     display: flex;
     flex-wrap: wrap;
 
@@ -134,8 +138,8 @@ aside{
 
 .contents img:hover{
     opacity: 50%;
-    width: auto;
-    height: 2;
+    width: 20em;
+    height: 20em;
 }
 
 figure{
