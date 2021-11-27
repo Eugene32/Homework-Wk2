@@ -5,8 +5,9 @@
 body{
     background-color: aliceblue;
     box-sizing: border-box;
-    display: flex;
-    
+    /*display: flex;
+    flex-wrap: wrap;
+    */
 }
 
 header{
@@ -19,6 +20,7 @@ header{
     z-index: 1;
     display: block;
     text-align: center;
+    overflow: hidden;
     /* flex-wrap: wrap; */
 }
 
@@ -52,18 +54,50 @@ nav li{
     display: inline-block;
 }
 
+main{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+
+}
+
+section{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+
+
 aside{
     width: 20%;
     height: auto;
-    border: 10px solid black;
+    border-right: 5px solid burlywood;
+    position: relative;
 }
 
-main{
-    border: 2px solid blue;
+.contents{
     position: relative;
     width: 80%;
-    height: auto
-    margin-top: 5px;
+    height: auto;   
     
+}
 
+
+footer{
+    border: 5px solid hotpink;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    align-items: center;
+    text-align: center;
 }
