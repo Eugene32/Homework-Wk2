@@ -52,10 +52,10 @@ nav ul{
     position: relative;
     align-items: center;
     flex: 1;
-    align-items: center;
     width: 100%;
     height: auto;
-    flex
+    
+ 
    
 }
 
@@ -112,22 +112,30 @@ aside{
     display: flex;
     flex-wrap: wrap;
     display: inline;  
+    align-content: space-between;
 }
 
 .contents img{
     position: relative;
     border-radius: 10px;
-    width: auto;
+    width: 250px;
     height: 300px;
     min-height: 100px;
     margin: 0px 10px;
     display: inline-block;
+   
+}
 
+.contents img:hover{
+    opacity: 50%;
 }
 
 figure{
     display: inline-block;
+    position: relative;
 }
+
+
 
 figcaption{
     text-align: center;
@@ -135,7 +143,9 @@ figcaption{
 
 .contents p{
     position: relative;
-    display: inline-block;
+ 
+    display: flex;
+
 }
 
 
@@ -147,7 +157,9 @@ footer{
     text-align: center;
 }
 
-@media screen (max-width:500px) {
+
+
+@media screen and (max-width:510px) {
     section{
         display: inline;
         flex-direction: column;
@@ -157,6 +169,14 @@ footer{
     
     aside{
          width: 100%;  
+         border-top: 5px solid burlywood;
+         border-right: none;
     }
-    
+    aside h2{
+        text-align: center;
+    }
+
+    figure img{
+        align-content: center;
+    }
 }
