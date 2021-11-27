@@ -10,6 +10,15 @@ body{
     */
 }
 
+.background{
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 90%;
+}
+
 header{
     background-color: green;
     position: fixed;
@@ -54,17 +63,24 @@ nav li{
     display: inline-block;
 }
 
+
+
 main{
     position: relative;
-    top: 100px;
+    top: 60px;
     width: 100%;
     height: auto;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 0;
     
+}
 
-
+.intro-image{
+    height: 20px;
+    width: 200%;
+    opacity: 99%;
 }
 
 section{
@@ -73,6 +89,7 @@ section{
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
+
     position: relative;
 
 }
@@ -83,21 +100,63 @@ aside{
     height: auto;
     border-right: 5px solid burlywood;
     position: relative;
+    min-width: 100px;
 }
 
 .contents{
     position: relative;
     width: 80%;
     height: auto;   
-    
+    min-width: 300px;
+    /* border: 2px solid skyblue; */
+    display: flex;
+    flex-wrap: wrap;
+    display: inline;  
+}
+
+.contents img{
+    position: relative;
+    border-radius: 10px;
+    width: auto;
+    height: 300px;
+    min-height: 100px;
+    margin: 0px 10px;
+    display: inline-block;
+
+}
+
+figure{
+    display: inline-block;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.contents p{
+    position: relative;
+    display: inline-block;
 }
 
 
 footer{
-    border: 5px solid hotpink;
     position: relative;
     top: 100px;
     left: 0px;
     align-items: center;
     text-align: center;
+}
+
+@media screen (max-width:500px) {
+    section{
+        display: inline;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    aside{
+         width: 100%;  
+    }
+    
 }
