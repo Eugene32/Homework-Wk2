@@ -89,29 +89,6 @@ main{
     
 }
 
-
-
-.hero-image {
-    background-image: url("/assets/images/background-coding.jpeg");
-    background-color: #cccccc;
-    height: 500px;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border: 5px solid black;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-
 section{
     width: 100%;
     height: auto;
@@ -157,6 +134,8 @@ aside{
 
 .contents img:hover{
     opacity: 50%;
+    width: auto;
+    height: 2;
 }
 
 figure{
