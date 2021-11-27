@@ -5,6 +5,7 @@
 body{
     background-color: aliceblue;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     /*display: flex;
     flex-wrap: wrap;
     */
@@ -35,8 +36,12 @@ header{
 
 header h1{
     padding: 20px 0px;
+    font-size: 45px;
+    color: white;
     
 }
+
+
 
 nav{
     display: block;
@@ -54,6 +59,7 @@ nav ul{
     flex: 1;
     width: 100%;
     height: auto;
+    text-decoration: none;
     
  
    
@@ -61,6 +67,13 @@ nav ul{
 
 nav li{
     display: inline-block;
+    font-size: 30px;
+    padding: 0px 20px;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
 }
 
 
@@ -146,6 +159,12 @@ figcaption{
  
     display: flex;
 
+}
+
+#contacts img{
+    height: 30px;
+    width: auto;
+    
 }
 
 
