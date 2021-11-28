@@ -158,7 +158,6 @@ aside{
 
 }
 
-
 figure{
     flex-wrap: wrap;
     display: inline-block;
@@ -168,14 +167,9 @@ figcaption{
     text-align: center;
 }
 
-
-
-}
-
 #contacts img{
     height: 10px;
     width: auto;
-
 }
 
 
