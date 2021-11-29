@@ -173,7 +173,7 @@ figcaption{
 }
 
 #works img:hover{
-    height: 20rem;
+    height: 15rem;
     width: auto;
 }
 
@@ -238,6 +238,7 @@ footer{
         width: 100%;
         border-top: 5px solid burlywood;
         border-right: none;
+        margin-bottom: 10px;
     }
 
     aside h2{
