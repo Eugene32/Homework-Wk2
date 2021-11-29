@@ -172,8 +172,10 @@ figcaption{
     display: inline-block;
 }
 
+
+
 #works img:hover{
-    height: 15rem;
+    height: 250px;
     width: auto;
 }
 
@@ -181,6 +183,11 @@ figcaption{
     height: 100px;
     width: auto;
     min-width: 100px;
+}
+
+#hobbies figure:hover{
+    position: relative;
+    top:-15px;       
 }
 
 #contacts img{
