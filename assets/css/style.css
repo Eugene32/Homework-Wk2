@@ -1,6 +1,6 @@
 :root{
         --radius-size: 10px;
-        --minimum-width: 400px;
+        --minimum-width: 100px;
         --nav-text-color: white;
         --main-text-color: black;
 }
@@ -74,10 +74,11 @@ main{
     margin-left: 190px;
     width: 89%;
     height: auto;
-    display: inline-block;
+    display: block;
     z-index: 0;
     min-width: var(--minimum-width);
     color: var(--main-text-color);
+    
 }
 
 section{
@@ -90,6 +91,7 @@ section{
     position: relative;
     left: 0px;
     padding-top: 10px;
+    flex: 1;
 }
 
 aside{
@@ -209,6 +211,8 @@ footer{
 }
 
 @media screen and (max-width:1165px) {
+
+    /*  */
     section{
         position: relative;
         display: inline-block;
@@ -217,6 +221,7 @@ footer{
         flex-wrap: wrap; 
     }
 
+    /* Moves the aside */
     aside{
         width: 100%;
         border-top: 5px solid burlywood;
@@ -224,26 +229,34 @@ footer{
         margin-bottom: 10px;
     }
 
+    /*  */
     aside h2{
         text-align: center;
     }
 
+    /*  */
     figure img{
         align-content: center;
         width: 25%;
         height: auto;
-    }
 
-    #works img{
+    }  
+
+    /* Prevents the icons to shrink when pointer is over the items. */
+    #works img, #works img:hover, #works figure:hover{
         
         width: 100%;
         height: auto;
         display: inline-block;
-    } 
+    }
+    
+   
+
 }
 
 @media screen and (max-width:851px) {
-     #hobbies figure{
+    
+    #hobbies figure{
         width: 49%;
         height: 200px;
         min-width: 100px;
@@ -253,6 +266,10 @@ footer{
         height: 200px;
         min-width: 100px;
     }
+    #works figure:hover{
+        pointer-events: none;
+    }
+
 }
 
 @media screen and (max-width:436px) {
