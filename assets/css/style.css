@@ -75,11 +75,8 @@ nav li{
     opacity: 50%;
 }
 
-/* Sets the text to full appearance, take out tranparency. */
 
-nav li:hover{
-    opacity: 100%;
-}
+
 
 /* Links appearance format */
 
@@ -87,6 +84,15 @@ nav a{
     text-decoration: none;
     color: white;
 
+}
+
+/* Sets the text to full appearance, take out tranparency. */
+nav li:hover{
+    opacity: 100%;
+}
+
+nav a:active::after{
+    content: "✅";
 }
 
 /* Prepares main container for the content */
@@ -227,8 +233,8 @@ figcaption{
     top:-15px;       
 }
 
-#singing:hover::after{
-        content: 
+#hobbies figure:hover::before{
+    content: "🤣";        
 }
 
 /* Format for images under contacts section */
