@@ -1,6 +1,5 @@
 
 /* Declare variables for easy access to general changes */
-
 :root{
         --radius-size: 10px;
         --minimum-width: 100px;
@@ -8,18 +7,14 @@
         --main-text-color: black;
 }
 
-
 /* Sets overall structure for body in terms of font, box and background color. */
-
 body{
     background-color: aliceblue;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* Prepares the navigation container: fixed at left side */
-
 header{
     background-color: black;
     position: fixed;
@@ -36,7 +31,6 @@ header{
 }
 
 /* Format for h1 on header nav bar. */
-
 header h1{
     padding: 20px 0px;
     color: var(--nav-text-color);
@@ -44,7 +38,6 @@ header h1{
 }
 
 /* Format for nav container */
-
 nav{
     display: block;
     position: relative;
@@ -54,7 +47,6 @@ nav{
 }
 
 /* Declaration of how the bookmark links should appear and behave. */
-
 nav ul{
     flex-wrap: wrap;
     position: relative;
@@ -68,18 +60,13 @@ nav ul{
 }
 
 /* Default appearance of link list */
-
 nav li{
     padding: 0px 20px;
     color: var(--nav-text-color);
     opacity: 50%;
 }
 
-
-
-
 /* Links appearance format */
-
 nav a{
     text-decoration: none;
     color: white;
@@ -91,12 +78,12 @@ nav li:hover{
     opacity: 100%;
 }
 
+/* Insert a tick mark when the bookmark link is clicked */
 nav a:active::after{
     content: "✅";
 }
 
 /* Prepares main container for the content */
-
 main{
     position: relative;
     margin-left: 190px;
@@ -110,7 +97,6 @@ main{
 }
 
 /* Prepares section container for both the aside and content */
-
 section{
     width: auto;
     height: auto;
@@ -125,7 +111,6 @@ section{
 }
 
 /* Aside declaration */
-
 aside{
     width: 13%;
     height: auto;
@@ -135,7 +120,6 @@ aside{
 }
 
 /* Formatting content area */
-
 .contents{
     position: relative;
     width: 87%;
@@ -148,7 +132,6 @@ aside{
 }
 
 /* Declares default image appearance */
-
 .contents img{
     position: relative;
     border-radius: var(--radius-size);
@@ -159,8 +142,8 @@ aside{
     display: inline-block;
 }
 
+/* This portion makes the images under whois jump when mouse is over it. */
 #whois img:hover{
-
 /*and make the animation last for 0.5 seconds */
 animation: jumping 1.0s;
 /* delay animation trigger for 0.5s */
@@ -170,7 +153,6 @@ animation-iteration-count: infinite;
 }
 
 /* jump routine  */
-
 @keyframes jumping {
 0% { transform: translate(0px, -1px) ; }
 10% { transform: translate(0px, -2px) ; }
@@ -185,24 +167,18 @@ animation-iteration-count: infinite;
 100% { transform: translate(0px, -1px) ; }
 }
 
-
-
-
 /* Declares figure container behaviour as to be an inline-block and to wrap */
-
 figure{
     flex-wrap: wrap;
     display: inline-block;
 }
 
 /* Center text for the figure caption */
-
 figcaption{
     text-align: center;
 }
 
 /* Format for images under Works section */
-
 #works img{
     height: 200px;
     width: 400px;
@@ -211,7 +187,6 @@ figcaption{
 }
 
 /* Change size of image upon hover */
-
 #works img:hover{
     height: 250px;
     width: 400px;
@@ -219,7 +194,6 @@ figcaption{
 }
 
 /* Format for images under hobbies section */
-
 #hobbies img{
     height: 100px;
     width: auto;
@@ -227,25 +201,23 @@ figcaption{
 }
 
 /* Change position (raise up) image during mouse hover */
-
 #hobbies figure:hover{
     position: relative;
     top:-15px;       
 }
 
+/* Show a LOL icon when 'hobbies' figure element if mouse is over it.*/
 #hobbies figure:hover::before{
     content: "🤣";        
 }
 
 /* Format for images under contacts section */
-
 #contacts img{
     height: 10px;
     width: auto;
 }
 
-/* Shaking animation for how to contact icons */
-
+/* Shaking animation for 'how to reach' icons */
 #contacts figure:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
@@ -255,7 +227,6 @@ figcaption{
   }
 
    /* shake routine  */
-
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -271,7 +242,6 @@ figcaption{
   }
 
 /* Footer format */
-
 footer{
     position: relative;
     top: 100px;
@@ -283,9 +253,7 @@ footer{
     padding-bottom: 20px;
 }
 
-
 /* Behaviour of images/contents of main during screen resizing to 1165px. */
-
 @media screen and (max-width:1165px) {
 
     /*  */
@@ -324,16 +292,12 @@ footer{
         width: 100%;
         height: auto;
         display: inline-block;
-    }
-    
-   
+    } 
 
 }
 
 
 /* Behaviour of images/contents of main during screen resizing to 851px. */
-
-
 @media screen and (max-width:851px) {
     
     #hobbies figure{
@@ -354,7 +318,6 @@ footer{
 
 
 /* Behaviour of images/contents of main during screen resizing to 436px. */
-
 @media screen and (max-width:436px) {
     #hobbies figure{
        width: 100%;
